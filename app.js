@@ -1,34 +1,35 @@
 // /////////////////// Question 1 \\\\\\\\\\\\\\\\\\\\\
 
-// function fibonacci(n) {
-//     if (n <= 1) {
-//         return n;
-//     } else {
-//         return fibonacci(n - 2) + fibonacci(n - 1);
-//     }
-// }
-// console.log(fibonacci(-1)); // 0
-// console.log(fibonacci(1)); // 1
-// console.log(fibonacci(2)); // 1
-// console.log(fibonacci(3)); // 2
-// console.log(fibonacci(4)); // 3
-// console.log(fibonacci(5)); // 5
-// console.log(fibonacci(6)); // 8
-// console.log(fibonacci(7)); // 13
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+console.log(fibonacci(0)); // 
+console.log(fibonacci(1)); // 1
+console.log(fibonacci(2)); // 1
+console.log(fibonacci(3)); // 2
+console.log(fibonacci(4)); // 3
+console.log(fibonacci(5)); // 5
+console.log(fibonacci(6)); // 8
+console.log(fibonacci(7)); // 13
 
 
 // /////////////////// Question 2 \\\\\\\\\\\\\\\\\\\\\
 
 // // the sum of array elements
 // // way 1
-// function sum(array) {
-//     if (array.length === 0) {
-//         return 0;
-//     } else {
-//         return array[0] + sum(array.slice(1))
-//     }
-// }
-// console.log(sum([1, 3, 5]))
+function sum(array) {
+    if (array.length === 0) {
+        return 0;
+    } else {
+        return array[0] + sum(array.slice(1))
+    }
+}
+console.log(sum([1, 3, 5]))
 
 // // // way 2
 // // function array_sum(my_array) {
@@ -50,7 +51,7 @@
 // //     let reverseString = splitString.reverse();
 // //     let joinArray = reverseString.join("");
 
-// //     return joinArray;
+// //     return joinArreaay;
 // // }
 // // console.log(reverseString("hello"));
 
@@ -154,6 +155,7 @@
 ////////////// question 2 \\\\\\\\\\\\\\
 // Given a queue of integers, reverse the order of the elements in the queue.
 
+const queue = [1, 2, 3, 4, 5];
 function reverseQueue(queue) {
     const stack = [];
     while (queue.length > 0) {
@@ -166,7 +168,6 @@ function reverseQueue(queue) {
 }
 
 
-const queue = [1, 2, 3, 4, 5];
 reverseQueue(queue);
 console.log(queue); // [5, 4, 3, 2, 1]
 
