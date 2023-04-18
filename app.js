@@ -51,7 +51,7 @@ console.log(sum([1, 3, 5]))
 // //     let reverseString = splitString.reverse();
 // //     let joinArray = reverseString.join("");
 
-// //     return joinArray;
+// //     return joinArreaay;
 // // }
 // // console.log(reverseString("hello"));
 
